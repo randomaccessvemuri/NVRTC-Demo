@@ -1,0 +1,20 @@
+{
+  "imageConfig": {
+    "imageWidth": 1920,
+    "imageHeight": 1080,
+    //If a pixel is not colored in the image, it will be colored with this color
+    "imageBackgroundColor": "#000000"
+  }
+
+  //Any valid cuda function can be used here
+  "functions": [
+    "__host__ "
+  ]
+  
+  "output": {
+    "renderOutputDirectory": "rendered",
+    "renderOutputFilename": "rendered.png"
+  }
+
+
+}

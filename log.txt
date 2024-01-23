@@ -1,0 +1,55 @@
+﻿2024-01-20 11:42:51.691 DEBUG [24408] [generatePTX@73] Compiling Kernel To CUDA PTX..
+
+2024-01-20 11:42:51.714 DEBUG [24408] [generatePTX@87] Generated NVRTC Log: iter_kernel(1): error: identifier "coord" is undefined
+  extern "C" __global__ void iterFunc(uchar4 * img, coord cartesianBounds, coord cartesianOrigin, dims imageDims) {
+                                                    ^
+
+iter_kernel(1): error: identifier "coord" is undefined
+  extern "C" __global__ void iterFunc(uchar4 * img, coord cartesianBounds, coord cartesianOrigin, dims imageDims) {
+                                                                           ^
+
+iter_kernel(1): error: identifier "dims" is undefined
+  extern "C" __global__ void iterFunc(uchar4 * img, coord cartesianBounds, coord cartesianOrigin, dims imageDims) {
+                                                                                                  ^
+
+iter_kernel(9): error: identifier "complexNum" is undefined
+  	complexNum c(cartesianX, cartesianY);
+  	^
+
+iter_kernel(11): warning #174-D: expression has no effect
+  		"+ITERATION_FUNCTION+";
+  		^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+4 errors detected in the compilation of "iter_kernel".
+
+2024-01-20 11:42:51.726 DEBUG [24408] [generatePTX@91] PTX Code generated!
+2024-01-20 11:43:19.868 DEBUG [6616] [generatePTX@68] Generating PTX Code From Kernel Code..
+2024-01-20 11:43:19.868 DEBUG [6616] [generatePTX@74] Compiling Kernel To CUDA PTX..
+
+2024-01-20 11:43:19.888 DEBUG [6616] [generatePTX@88] Generated NVRTC Log: iter_kernel(1): error: identifier "coord" is undefined
+  extern "C" __global__ void iterFunc(uchar4 * img, coord cartesianBounds, coord cartesianOrigin, dims imageDims) {
+                                                    ^
+
+iter_kernel(1): error: identifier "coord" is undefined
+  extern "C" __global__ void iterFunc(uchar4 * img, coord cartesianBounds, coord cartesianOrigin, dims imageDims) {
+                                                                           ^
+
+iter_kernel(1): error: identifier "dims" is undefined
+  extern "C" __global__ void iterFunc(uchar4 * img, coord cartesianBounds, coord cartesianOrigin, dims imageDims) {
+                                                                                                  ^
+
+iter_kernel(9): error: identifier "complexNum" is undefined
+  	complexNum c(cartesianX, cartesianY);
+  	^
+
+iter_kernel(11): warning #174-D: expression has no effect
+  		"+ITERATION_FUNCTION+";
+  		^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+4 errors detected in the compilation of "iter_kernel".
+
+2024-01-20 11:43:19.888 DEBUG [6616] [generatePTX@92] PTX Code generated!
